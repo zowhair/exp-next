@@ -8,6 +8,7 @@ import PackageCards from '../components/PackageCards';
 import Packages from '../components/Packages';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
+import NewCard from '../components/card/NewCard';
 
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
       </Head>
         <Carousel />
         <Hero />
-        <Card />
+        {/* <Card /> */}
+        <NewCard />
         <PackageCards />
         <Packages />
    

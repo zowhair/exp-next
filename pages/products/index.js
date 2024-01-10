@@ -1,5 +1,6 @@
 import {Box, Tabs} from "@mui/material"
 const ProductPage = () => {
+    const value = 1;
     return (
         <>
             <div className="productDetailPageContainer">

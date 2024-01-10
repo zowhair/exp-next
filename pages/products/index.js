@@ -1,6 +1,10 @@
 import {Box, Tabs} from "@mui/material"
 const ProductPage = () => {
     const value = 1;
+
+    function handleChange() {
+        console.log("tab changed");
+    }
     return (
         <>
             <div className="productDetailPageContainer">

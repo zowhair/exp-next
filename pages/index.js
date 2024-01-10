@@ -9,6 +9,7 @@ import Packages from '../components/Packages';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import NewCard from '../components/card/NewCard';
+import  Stay  from '../components/Stay';
 
 
 export default function Home() {
@@ -21,10 +22,18 @@ export default function Home() {
         <Carousel />
         <Hero />
         {/* <Card /> */}
-        <NewCard />
+        <div className="block-component">
+          <div className="card-wrapper container-block">
+            <NewCard title="K2 expedition" desc="k2 expedition is ..." tag="sale" />
+            <NewCard title="Gasherbrum" desc="We provide Gasherbrum Expedition...." tag="new" />
+            <NewCard title="G6 Expedition" desc="Economy Package..." tag="sale" />
+            <NewCard title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
+          </div>
+        </div>
         <PackageCards />
         <Packages />
-   
+        {/* <Stay /> */}
+
       
 
       <style jsx global>{`

@@ -13,6 +13,11 @@
     padding-right: 1rem;
     position: relative;
     width: 100%;
+    max-width: 75%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
   }
   .block-component .card-wrapper .product-block{
     flex: 1 0 0;
@@ -29,6 +34,10 @@
     border-radius: 24px;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    /* margin-left: auto;
+    margin-right: auto;
+   min-width: 333px;
+   max-width: calc(25% - 1.6rem); */
   }
   .block-component .card-wrapper .product-block .card-product {
   
@@ -39,7 +48,7 @@
     display: flex;
     background-color: white;
     text-decoration: none;
-    min-width: 280px;
+    min-width: 333px;
     max-width: calc(33.33% - 1.6rem);
     transition: transform .25s ease-in-out;
   }
@@ -155,8 +164,30 @@
     margin: 0;
   }
   
+  .card-product .tag span {
+    color: white;
+    padding: 4px 10px;
+    font-family: mono;
+    border-radius: 5px;
+  }
+  .card-product .tag.new span {
+    background-color: rgb(139, 197, 198);
+
+  }
+  .card-product .tag.sale span {
+    background-color: #f00;
+
+  }
+  .card-product .tag.discount span {
+    background-color: rgb(189, 204, 161);
+  }
   
   
+  @media screen and (max-width: 767px) {
+    .block-component .card-wrapper {
+      flex-flow: column;
+    }
+  }
   
   /* 
   @media screen and (min-width: 1200px){

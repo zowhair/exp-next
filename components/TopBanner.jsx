@@ -2,6 +2,7 @@ import Image from "next/image"
 import styles from "../styles/Home.module.css";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
+import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 
 export default function TopBanner() {
     return (
@@ -15,13 +16,27 @@ export default function TopBanner() {
                     </Box>
                 </Link>
                 <Box className={styles.topright} sx={{ my: 2, mx: 5 }}>
-                    <span>
+                    {/* <span>
                         Call Us
                         <span className={styles.orange}>24</span>
                         <span className={styles.green}>/7</span>
                     </span>
-                    <br />
-                    <a className={styles.number} href=" https://wa.me/+923004708813">+92(300)4708813</a>
+                    <br /> */}
+                    <div className="top-banner-right wrapper">
+                        <div className="top-banner right">
+                            <div className="phone-wrapper">
+                                <a className="top-banner phone" target="_blank" href=" https://wa.me/+923004708813">+92(300)4708813</a>
+                            </div>
+                            <div className="email-wrapper">
+                                <a className="top-banner email" target="_blank" href="mailto:contact@expeditionasiaa.com">contact@expeditionasiaa.com</a>
+                            </div>
+                        </div>
+
+                        <div className="login-wrapper">
+                            <a className="top-banner login" href="/login"><ManageAccountsOutlinedIcon /></a>
+                        </div>
+
+                    </div>
                 </Box>
 
             </div>

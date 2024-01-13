@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 
 /* New Card Styles  */
@@ -213,3 +214,16 @@
     }
   
   } */
+
+  .price-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .price-wrapper .price {
+    padding: 16px;
+    font-size: 30px;
+    color: #0fac5e;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+  }

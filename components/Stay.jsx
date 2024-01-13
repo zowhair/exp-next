@@ -1,7 +1,8 @@
-import { Button } from "./Button"
+
+import { Button } from "./Button";
 
 
-export default function Stay({content}){
+export function Stay(){
     return (
         <div className="card-product">
             <div className="container-block">
@@ -33,5 +34,5 @@ export default function Stay({content}){
                 </div>
             </div>
         </div>
-    )
+    );
 }

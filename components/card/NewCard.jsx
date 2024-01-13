@@ -1,7 +1,9 @@
 import { Highlights } from "../Highlights"
 import { Button } from "../Button"
+import Price from "../Price"
 
-export default function NewCard({title, desc, tag }) {
+export default function NewCard({slug, title, desc, tag }) {
+    let link = 'product/'+slug;
     return (
         <div className="product-block ">
             {/* single-card */}
@@ -47,7 +49,8 @@ export default function NewCard({title, desc, tag }) {
                                 <Highlights text="T4 Trail" />
                             </div>
                         </div>
-                        <Button content="book now"/>
+                        <Price />
+                        <Button content="book now" link={link} />
                         
                     </div>
                 </div>

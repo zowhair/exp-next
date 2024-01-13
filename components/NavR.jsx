@@ -103,8 +103,6 @@ function ResponsiveAppBar() {
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <Link href={page.slug}>
                     <Typography>
-
-
                       {page.title}
                     </Typography>
                   </Link>

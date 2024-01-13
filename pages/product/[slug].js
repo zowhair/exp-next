@@ -1,8 +1,20 @@
 import Link from 'next/link';
+import { Arrange } from '../../components/Arrange';
 
-function Product({title, data}) {
+export async function getServerSideProps(context) {
+    console.log(context)
+    return {
+        props: {
+            title: "This is title and rest is data",
+            slug: context.params.slug,
+        },
+    }
+}
+
+function Product({title, slug}) {
     return (
         <>
+            <Arrange data={slug} />
             <div className="productDetailPageContainer">
                 <div className="productPageTopHead">
                     <div className="productHeading">
@@ -13,7 +25,7 @@ function Product({title, data}) {
                 <div className="productPageBottomHead">
                     <div className="productLeftContainer">
                         <div className="productTabs">
-                            <h1>{title} {data}</h1>
+                            <h1>{title} {slug}</h1>
 
                         </div>
 
@@ -41,13 +53,5 @@ function Product({title, data}) {
     )
 }
 
-export async function getServerSideProps(context) {
-    console.log({context})
-    return {
-        props: {
-            title: "This is title and rest is data",
-            data: context.params.slug
-        }
-    }
-}
+
 export default Product;

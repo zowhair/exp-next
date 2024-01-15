@@ -29,7 +29,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* margin-left: 60px */
+    width: 95%;
+    margin: 0 auto;
   }
   .card-product {
     box-shadow: 0 28px 32px #6c6d711a, 0 4px 8px #6c6d710d, 0 8px 16px #6c6d710d;
@@ -50,8 +53,9 @@
     display: flex;
     background-color: white;
     text-decoration: none;
-    min-width: 333px;
-    max-width: calc(33.33% - 1.6rem);
+   
+    /* min-width: 333px;
+    max-width: calc(33.33% - 1.6rem); */
     transition: transform .25s ease-in-out;
   }
   .block-component .card-wrapper .product-block .card-product:hover {

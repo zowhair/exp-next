@@ -47,9 +47,9 @@ export default function Home() {
         <div className="block-component">
           <div className='container-block'>
             <div className="card-wrapper container-block">
-            <swiper-container ref={swiperRef} init="false" slides-per-view="2" loop="true" > 
-            <swiper-slide>
+            <swiper-container ref={swiperRef} init="false" slides-per-view="3" loop="true" > 
 
+            <swiper-slide>
                 <NewCard slug="k2-expedition" title="K2 expedition" desc="k2 expedition is ..." tag="sale" />
             </swiper-slide>
 
@@ -68,6 +68,18 @@ export default function Home() {
 
                 <NewCard slug="nangaparbet" title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
             </swiper-slide>
+            <swiper-slide>
+
+                <NewCard slug="nangaparbet" title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
+            </swiper-slide>
+            <swiper-slide>
+
+                <NewCard slug="nangaparbet" title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
+            </swiper-slide>
+              
+
+            
+            
 
      
                 </swiper-container> 

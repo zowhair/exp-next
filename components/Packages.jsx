@@ -14,9 +14,6 @@ import Typography from '@mui/joy/Typography';
 import { Card, CardContent, CardCover } from '@mui/joy';
 
 
-
-
-
 export default function Packages() {
     const title = "Popular Treks"
     const description="At Expedition Asia Trek & Tours  you'll find the treks that will make your life unforgettable. Find local trekking companies, enjoy local prices but pay securely and conveniently and get the lowest price guarantee. Need help? Ask our trekking experts."

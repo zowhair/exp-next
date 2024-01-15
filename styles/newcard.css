@@ -19,6 +19,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    /* overflow-x: hidden; */
   }
   .block-component .card-wrapper .product-block{
     flex: 1 0 0;

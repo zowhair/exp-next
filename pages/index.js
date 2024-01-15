@@ -24,11 +24,14 @@ export default function Home() {
         <Hero />
         {/* <Card /> */}
         <div className="block-component">
-          <div className="card-wrapper container-block">
-            <NewCard slug="k2-expedition" title="K2 expedition" desc="k2 expedition is ..." tag="sale" />
-            <NewCard slug="gasherbrum" title="Gasherbrum" desc="We provide Gasherbrum Expedition...." tag="new" />
-            <NewCard slug="g6-expedition" title="G6 Expedition" desc="Economy Package..." tag="sale" />
-            <NewCard slug="nangaparbet" title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
+          <div className='container-block'>
+            <div className="card-wrapper container-block">
+              <NewCard slug="k2-expedition" title="K2 expedition" desc="k2 expedition is ..." tag="sale" />
+              <NewCard slug="gasherbrum" title="Gasherbrum" desc="We provide Gasherbrum Expedition...." tag="new" />
+              <NewCard slug="g6-expedition" title="G6 Expedition" desc="Economy Package..." tag="sale" />
+              <NewCard slug="nangaparbet" title="Nangaparbet expedition" desc="New Sale offer..." tag="discount" />
+            </div>
+
           </div>
         </div>
         <PackageCards />

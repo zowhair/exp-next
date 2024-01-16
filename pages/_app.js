@@ -10,6 +10,7 @@ import "../styles/text.css"
 import "../styles/product.css"
 import "../styles/form.css"
 import "../styles/layout.css"
+import "../styles/aboutus.css"
 
 
 export default function Asia({Component, pageProps}) {

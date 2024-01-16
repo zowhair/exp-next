@@ -45,3 +45,6 @@ a.top-banner.phone{
     text-decoration: none;
     color: black;
   }
+  *, body{
+    margin: 0;
+  }

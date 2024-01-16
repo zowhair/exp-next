@@ -34,10 +34,6 @@ const pages = [
   {
     title: "About Us",
     slug: '/aboutus',
-  },
-  {
-    title: 'Contact Us',
-    slug: "/contactus"
   }
 
 ];

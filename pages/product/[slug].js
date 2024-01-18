@@ -12,15 +12,19 @@ export async function getServerSideProps(context) {
 }
 
 function Product({title, slug}) {
-    async function handleClick() {
+    function handleClick() {
         let email_data = JSON.stringify({
             email: "zowhair@gmail.com",
             message: "This is a dev test message"
         })
 
-        await fetch("/api/email/route", {
+        fetch("/api/email/route", {
             method: "POST",
             body: email_data
+        })
+        .then(response => response.text())
+        .then(tx => {
+            console.log('response:: -> ',tx)
         })
     } 
     return (

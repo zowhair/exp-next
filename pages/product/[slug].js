@@ -12,6 +12,17 @@ export async function getServerSideProps(context) {
 }
 
 function Product({title, slug}) {
+    async function handleClick() {
+        let email_data = JSON.stringify({
+            email: "zowhair@gmail.com",
+            message: "This is a dev test message"
+        })
+
+        await fetch("/api/email/route", {
+            method: "POST",
+            body: email_data
+        })
+    } 
     return (
         <>
             <Arrange data={slug} />
@@ -32,6 +43,7 @@ function Product({title, slug}) {
                     </div>
                     <div className="productRightContainer">
                         {/* make card here, checkout and price */}
+                        <button onClick={handleClick}>send test</button>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ export async function POST(request) {
     });
 
     const mailOptions = {
-        from: env.NODEMAILER_EMAIL,
+        from: process.env.NODEMAILER_EMAIL,
         to: "zowhair@gmail.com",
         subject: `Message from (${email})`,
         text: message,

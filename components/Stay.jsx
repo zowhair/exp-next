@@ -2,7 +2,7 @@
 import { Button } from "./Button";
 
 
-export function Stay(){
+export function Stay(...props){
     return (
         <div className="card-product">
             <div className="container-block">
@@ -13,7 +13,11 @@ export function Stay(){
                     <div className="top-text">
                         <div>
                             <div className="text-first">Starting at</div>
-                            <div className="text-second">$ 2345</div>
+                            {props[0].price ? 
+                                <div className="text-second">{props[0].price}</div>
+                            :     
+                                <div className="text-second">$ 2345</div>
+                            }
                             <div className="text-third">per person</div>
 
                         </div>
@@ -22,12 +26,12 @@ export function Stay(){
 
                     </div>
                     <div >
-                        <input type="text" placeholder="Pick a date" className="blur-input" />
+                        {/* <input type="text" placeholder="Pick a date" className="blur-input" /> */}
                     </div>
                     <div className="buy-block-btn">
-                        <button className="as-link">
+                        {/* <button className="as-link">
                             Check group discount
-                        </button>
+                        </button> */}
 
                     </div>
                     <Button content="book now"/>

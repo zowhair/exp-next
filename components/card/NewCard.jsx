@@ -2,14 +2,19 @@ import { Highlights } from "../Highlights"
 import { Button } from "../Button"
 import Price from "../Price"
 
-export default function NewCard({slug, title, desc, tag }) {
+export default function NewCard({slug, title, desc, tag, price, imgSrc }) {
     let link = 'product/'+slug;
+    
     return (
         <div className="product-block ">
             {/* single-card */}
             <div className="card-product">
                 <div className="card-image-wrapper">
-                    <img src="https://cdn.bookatrekking.com/data/images/2019/06/mera-peak-climbing-cover-photo-768w.webp"/>
+                    {imgSrc ? 
+                        <img src={imgSrc} />
+                    : 
+                        <img src="https://cdn.bookatrekking.com/data/images/2019/06/mera-peak-climbing-cover-photo-768w.webp"/>
+                    }
                 </div>
                 <div className="card-content-wrapper">
                     <div className="content-top">
@@ -49,8 +54,8 @@ export default function NewCard({slug, title, desc, tag }) {
                                 <Highlights text="T4 Trail" />
                             </div>
                         </div>
-                        <Price />
-                        <Button content="book now" link={link} />
+                        <Price price={price} />
+                        <Button content="book now" link={link} price={price} />
                         
                     </div>
                 </div>

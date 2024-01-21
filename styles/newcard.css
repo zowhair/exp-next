@@ -188,6 +188,9 @@
     .block-component .card-wrapper {
       flex-flow: column;
     }
+  .block-component .card-wrapper .product-block {
+      justify-content: center;
+    }
   }
   
   /* 
@@ -224,6 +227,16 @@
     padding: 16px;
     font-size: 30px;
     color: #0fac5e;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .container_title {
+    display: flex;
+    justify-content: center;
+  }
+  .container_title .title{
+    font-size: 22px;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
   }

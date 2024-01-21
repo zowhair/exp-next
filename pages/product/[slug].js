@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { Arrange } from '../../components/Arrange';
+import { k2_concordia, nangaparbet, biafoHispar,indus_valley_itinerary,northSouth, skardu } from './data';
 
 export async function getServerSideProps(context) {
-    console.log(context)
     return {
         props: {
             title: "This is title and rest is data",
@@ -12,9 +12,23 @@ export async function getServerSideProps(context) {
 }
 
 function Product({title, slug}) {
+    let data;
+    if(slug == 'k2-expedition') {
+        data = k2_concordia
+    } else if(slug == 'nangaparbet') {
+        data = nangaparbet
+    } else if(slug == 'biafohispar') {
+        data = biafoHispar
+    } else if(slug == 'indusvalley') {
+        data = indus_valley_itinerary
+    } else if(slug =='northandsouth') {
+        data = northSouth
+    } else if(slug == 'skardutours') {
+        data = skardu
+    }
     return (
         <>
-            <Arrange data={slug} />
+            <Arrange data={slug} details={data} />
             <div className="productDetailPageContainer">
                 <div className="productPageTopHead">
                     <div className="productHeading">
@@ -25,13 +39,12 @@ function Product({title, slug}) {
                 <div className="productPageBottomHead">
                     <div className="productLeftContainer">
                         <div className="productTabs">
-                            <h1>{title} {slug}</h1>
+                            {/* <h1>{title} {slug}</h1> */}
 
                         </div>
 
                     </div>
                     <div className="productRightContainer">
-                        {/* make card here, checkout and price */}
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ export default function TopBanner() {
                 <Link href="/" style={{textDecoration:'none'}}>
                     <Box className={styles.topleft}>
                         <img src="https://expeditionasia.com.pk/img/logo-top.png" width={100} height={100} />
-                        <span className={styles.brandname}>Expedition Asia Treks & Tours</span>
+                        <span className={styles.brandname}>Expedition Asia Treks & Tours Pakistan</span>
 
                     </Box>
                 </Link>
@@ -28,7 +28,7 @@ export default function TopBanner() {
                                 <a className="top-banner phone" target="_blank" href=" https://wa.me/+923004708813">+92(300)4708813</a>
                             </div>
                             <div className="email-wrapper">
-                                <a className="top-banner email" target="_blank" href="mailto:contact@expeditionasiaa.com">contact@expeditionasiaa.com</a>
+                                <a className="top-banner email" target="_blank" href="mailto:expeditionasiaa@gmail.com">expeditionasiaa@gmail.com</a>
                             </div>
                         </div>
 

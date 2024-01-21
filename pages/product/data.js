@@ -399,7 +399,7 @@ export const indus_valley_itinerary = [
             ]
         }
     ],
-    banner:"/images/cultural.jpeg"
+    banner:"/images/sword-danceskd.jpg"
     }
 ];
   
@@ -574,7 +574,7 @@ export const skardu = [
               ]
             }
         ],
-        banner:"/images/3.JPG"
+        banner:"/images/skardu1.jpg"
     }
   ];
   

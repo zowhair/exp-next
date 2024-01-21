@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { register } from 'swiper/element/bundle';
+import 'swiper/element/css/navigation'
+import { Text } from './Text';
+
 // register Swiper custom elements
 register();
 
@@ -9,25 +12,35 @@ export default function PartnersCarousel() {
     useEffect(() => {
       const swiperContainer = swiperRef.current;
       const params = {
-        navigation: true,
-        pagination: true,
+        navigation: false,
+        pagination: false,
       };
   
       Object.assign(swiperContainer, params);
       swiperContainer.initialize();
     }, []);
   
-  
+    const dataLogo = [
+        '/images/logos/Expo_2020.png',
+        '/images/logos/itbberlin.jpg',
+        '/images/logos/logo-top.png',
+        '/images/logos/wtmlondon.jpg',
+        '/images/logos/Expo_2020.png',
+        '/images/logos/itbberlin.jpg',
+        '/images/logos/logo-top.png',
+
+    ]
     return (
-        <swiper-container ref={swiperRef} init="false" slides-per-view="3" loop="true" > 
-        
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide asd</swiper-slide>
-            <swiper-slide>Slide ko</swiper-slide>
-            <swiper-slide>Slide 990</swiper-slide>
-            <swiper-slide>Slide klklk</swiper-slide>
-        </swiper-container>
+
+        <div className='partners-carousel'>
+            
+            <swiper-container className="" ref={swiperRef} init="false" slides-per-view="3" loop="true" autoplay > 
+                {dataLogo.map(data => {
+                    return <swiper-slide>
+                            <img className='partners logo' width="100" src={data} />
+                        </swiper-slide>
+                })}
+            </swiper-container>
+        </div>
     )
 }

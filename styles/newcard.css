@@ -240,3 +240,14 @@
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
   }
+
+  /* partners slider */
+  .partners-carousel
+    {
+       width: 710px !important;
+       margin: 0 auto;
+     }
+    
+  .partners-carousel .partners.logo {
+    width: 150px;
+  }

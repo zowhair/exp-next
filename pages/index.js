@@ -54,9 +54,9 @@ export default function Home() {
               <span className='title'>Cultural Tours</span>
             </div>
             <div className="card-wrapper container-block">
-              <NewCard imgSrc="/images/cultural.jpeg" slug="indusvalley" title="Indus Valley Civilization Culture tours" desc="New Sale offer..." tag="discount" price="$989" />
+              <NewCard imgSrc="/images/taxila.jpg" slug="indusvalley" title="Indus Valley Civilization Culture tours" desc="New Sale offer..." tag="discount" price="$989" />
               <NewCard imgSrc="/images/northsouth.jpeg" slug="northandsouth" title="North and South Pakistan Culture Tours" desc="Economy Package..." tag="sale" price="$657" />
-              <NewCard imgSrc="/images/spring.jpg" slug="skardutours" title="Skardu Tours " desc="New Sale offer..." tag="discount" price="$989" />
+              <NewCard imgSrc="/images/shigrilla.jpg" slug="skardutours" title="Skardu Tours " desc="New Sale offer..." tag="discount" price="$989" />
             </div>            
           </div>
         </div>

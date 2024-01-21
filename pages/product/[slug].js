@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Arrange } from '../../components/Arrange';
-import { k2_concordia, nangaparbet, biafoHispar,indus_valley_itinerary,northSouth, skardu } from './data';
+import { k2_concordia, nangaparbet, biafoHispar,indus_valley_itinerary,northSouth, skardu } from '../../public/data';
 
 export async function getServerSideProps(context) {
     return {

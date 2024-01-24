@@ -12,6 +12,7 @@ import NewCard from '../components/card/NewCard';
 import  Stay  from '../components/Stay';
 import { Arrange } from '../components/Arrange';
 import Form from '../components/Form';
+import { Collectioncard } from '../components/card/Collectioncaed';
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         
         <Arrange />
         <Form />
+        <Collectioncard />
         {/* <Stay /> */}
 
       
